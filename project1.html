@@ -1,0 +1,345 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book-Lovers &#128151</title>
+        <link rel="stylesheet" href="p1css.css">
+        <script src="https://kit.fontawesome.com/7a5c047f63.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@200&family=Roboto:wght@100;300&family=Sacramento&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header" id="Home">
+        <div class="container">
+            <div class="navbar">
+                <a href="#Home" class="logo"> <i class="fa-solid fa-book"></i> Book Lovers </a>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Featured">Featured</a></li>
+                        <li><a href="#Arrivals">Arrivals</a></li>
+                        <li><a href="#Reviews">Reviews</a></li>
+                        <li><a href="#Account">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menuicon.png" class="menu-icon" onclick="menuToggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                 <h1>Get Lost In BOOKS!</h1>
+                 <p>A Room without Books is like a Body without Soul!<br>
+                    Hand-Picked Books delivered to your door.</p>
+                    <a href="#Arrivals" class="btn">Explore Books &#8594</a>
+                </div>
+                <div class="account" id="Account">
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                             <span onclick="login()">Login</span>
+                             <span onclick="register()">Register</span>
+                             <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username" required>
+                            <input type="password" placeholder="Password" required>
+                            <button type="submit" class="btn">Login</button>
+                            <a href="" >Forgot Password</a>
+                        </form>
+                        <form id="RegForm" name="Regform" onsubmit="validation()">
+                            <input type="text" id="username" name="username" placeholder="Username" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <input type="password" id="password" name="password" placeholder="Password" required>
+                            <button type="submit" class="btn" target="">Register</button>
+                            <button type="reset" class="btn">Refresh</button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: dotted 5px; border-bottom :none;width: 100px; margin:70px auto">
+    <div class="small-container">
+        <div class="featured" id="Featured">
+         <h1 class="title">Featured Books</h1>
+          <div class="row">
+            <div class="col-3">
+                <img src="images/book1.jfif">
+                <h4>Top #1 selling book</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$50.00</p>
+                <a href="" class="btn">Book Now</a>
+            </div>
+            <div class="col-3">
+                <img src="images/book10.jpg">
+                <h4>Top #2 selling book</h4>
+                <div class="rating">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star-half-stroke"></i>
+                 <i class="fa-regular fa-star"></i>
+                 </div>
+                 <p>$45</p>
+                 <a href="" class="btn">Book Now</a>
+            </div>
+            <div class="col-3">
+                <img src="images/book-8.png">
+                <h4>Top #3 selling book</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$40.00</p>
+                <a href="" class="btn">Book Now</a>
+            </div>
+         </div>
+       </div>
+       <hr style="border: dotted 5px; border-bottom :none;width: 100px; margin:70px auto">
+       <div class="arrivals" id="Arrivals">
+       <h1 class="title">New Arrivals</h1>
+         <div class="row">
+            <div class="col-3">
+                <img src="images/book3.jfif">
+                <div class="rating">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$40</p>
+                <a href="" class="btn">Book Now</a>
+            </div>
+            <div class="col-3">
+                <img src="images/book7.jfif">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$35.00</p>
+                <a href="" class="btn">Book Now</a>
+            </div> 
+            <div class="col-3">
+                <img src="images/book4.jfif">
+                <div class="rating">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-regular fa-star"></i>
+                 </div>
+                 <p>$35</p>
+                 <a href="" class="btn">Book Now</a>
+            </div>
+            <div class="col-3">
+                <img src="images/book5.jfif">
+                <div class="rating">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-regular fa-star"></i>
+                 </div>
+                 <p>$30</p>
+                 <a href="" class="btn">Book Now</a>
+            </div>
+            <div class="col-3">
+                <img src="images/book6.jfif">
+                <div class="rating">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-regular fa-star"></i>
+                 </div>
+                 <p>$25</p>
+                 <a href="" class="btn">Book Now</a>
+            </div>
+            <div class="col-3">
+                <img src="images/review5.jfif">
+                <div class="rating">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star-half-stroke"></i>
+                 <i class="fa-regular fa-star"></i>
+                 </div>
+                 <p>$20</p>
+                 <a href="" class="btn">Book Now</a>
+            </div>
+            <div class="col-3">
+                <img src="images/book2.jfif">
+                <div class="rating">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star-half-stroke"></i>
+                 </div>
+                 <p>$15.00</p>
+                 <a href="" class="btn">Book Now</a>
+             </div>
+           <div class="col-3">
+            <img src="images/review4.webp">
+            <div class="rating">
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star-half-stroke"></i>
+             <i class="fa-regular fa-star"></i>
+             </div>
+             <p>$10</p>
+             <a href="" class="btn">Book Now</a>
+           </div>
+          <div class="col-3">
+            <img src="images/book12.jfif">
+            <div class="rating">
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-regular fa-star"></i>
+             <i class="fa-regular fa-star"></i>
+             </div>
+             <p>$5</p>
+             <a href="" class="btn">Book Now</a>
+          </div> 
+         </div> 
+        </div>
+     </div> 
+    </div>  
+    <hr style="border: dotted 5px; border-bottom :none;width: 100px; margin:50px auto">
+    <div class="reviews" id="Reviews">
+        <h1 class="title">Reviews</h1>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/review1.jfif">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><i class="fa-solid fa-quote-left"></i> Samantha - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut pretium urna. Ut pharetra sodales sapien. 
+                        <i class="fa-solid fa-quote-right"></i></p>
+                </div>
+                <div class="col-3">
+                    <img src="images/review2.jpeg">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p><i class="fa-solid fa-quote-left"></i> Vijay - Ut elementum ultricies luctus. Sed ligula neque, efficitur et lectus ut, fringilla facilisis mauris.
+                        <i class="fa-solid fa-quote-right"></i></p>
+                </div>
+                <div class="col-3">
+                    <img src="images/review3.jpg">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p><i class="fa-solid fa-quote-left"></i> Arjun - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut pretium urna. 
+                        <i class="fa-solid fa-quote-right"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: dotted 5px; border-bottom :none;width: 100px; margin:50px auto">
+    <footer>
+            <a href="#" class="logo"> <i class="fa-solid fa-book"></i> Book Lovers </a>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="#Home">Home</a> |
+                <a href="#Featured">Featured</a> |
+                <a href="#Arrivals">Arrivals</a> |
+                <a href="#Reviews">Reviews</a> |
+                <a href="#Account">Account</a>
+            </div>
+            <div class="docs">
+                <h3>Docs</h3>
+                <a href="">Privacy Policy</a> |
+                <a href="">Terms of Use</a> |
+                <a href="">Refund Policy</a> 
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="https://www.instagram.com/brinda_kitty/" target="_blank"><i class="fa-brands fa-instagram"></i></a> |
+                <a href="https://www.linkedin.com/in/m-brinda-7462b2215/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a> |
+                <a href="mailto: brindaiyengar45@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <hr style="border: solid 1px;">
+            <p>Copyright &copy; 2022 Book Lovers. All rights Reserved. </p>
+    </footer>
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbzv4PQJIRFWHeJ6IKLVro3ifAE7Jg44FAzwmR1DcY7nvhx7AUyGCx6T-wZt59M8Onn8/exec";
+        const form = document.forms['Regform'];
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+        })
+        .then(response => alert("Thanks for Registering!!!"))
+        .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menuToggle()
+        {
+            if(menuItems.style.maxHeight == "0px")
+            {
+                menuItems.style.maxHeight = "200px";
+            }
+            else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+     
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(10px)";
+        }
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(130px)";
+            
+        }
+    </script>
+    </body>
+</html>
